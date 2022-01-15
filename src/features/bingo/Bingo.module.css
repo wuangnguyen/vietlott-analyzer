@@ -1,0 +1,85 @@
+ul,
+li {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexContainer div.numbers {
+  background-color: #ed0000;
+  min-width: 50px;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.flexContainer div.numbers.selected {
+  background-color: royalblue;
+}
+.flexContainer div.numbers span {
+  background-color: #04d855;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 2px 3px;
+}
+
+.flexContainer .bingoItem {
+  width: 90%;
+  position: relative;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50px 80px auto auto auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.flexContainer .bingoItem div {
+  display: flex;
+  align-items: center;
+}
+.flexContainer .bingoItem.bingo {
+  background-color: #79ed64;
+}
+.flexContainer .bingoItem span {
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 5px;
+  width: 28px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+}
+.textRight {
+  text-align: right;
+}
+.btn {
+  width: 50%;
+  height: 30px;
+  display: block;
+  padding: 10px;
+  line-height: 30px;
+  border: 1px solid;
+  margin: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .flexContainer .bingoItem {
+    display: inline-table;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .flexContainer .bingoItem div {
+    margin: 10px auto;
+  }
+}
